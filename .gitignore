@@ -1,0 +1,16 @@
+# Secrets
+.env
+.env.*
+
+# Local tool state
+.treg/
+
+# Data exports (may contain personal data)
+*.csv
+*.xlsx
+
+# OS files
+.DS_Store
+
+# Personal Claude Code settings
+.claude/settings.local.json
