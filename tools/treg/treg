@@ -1,0 +1,13 @@
+#!/usr/bin/env sh
+# Project-scoped treg CLI wrapper for Git Bash. Same behaviour as treg.cmd.
+# Usage (from the project root): tools/treg/treg <command>
+ROOT="$(cd "$(dirname "$0")/../.." && pwd)"
+export TREG_CONFIG="$ROOT/.treg/config.json"
+export TREG_TELEMETRY=0
+export DO_NOT_TRACK=1
+EXE="$ROOT/.treg/venv/Scripts/treg.exe"
+if [ ! -x "$EXE" ]; then
+  echo "treg is not installed in this project. See tools/treg/README.md to rebuild .treg/" >&2
+  exit 1
+fi
+exec "$EXE" "$@"

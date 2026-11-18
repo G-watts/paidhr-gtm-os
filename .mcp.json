@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "treg": {
+      "type": "http",
+      "url": "https://treg.to/mcp/"
+    },
+    "notion": {
+      "type": "http",
+      "url": "https://mcp.notion.com/mcp"
+    }
+  }
+}
