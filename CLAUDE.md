@@ -38,3 +38,13 @@ PaidHR (paidhr.com): HR and payroll platform for African businesses. Full summar
 - **Miro** (MCP, via plugin `miro@miro-ai`): diagrams, such as GTM system maps and workflow flows. Ask before creating or editing any board.
 - **Notion** (MCP, `notion` in `.mcp.json`): where we publish finished docs. GitHub stays the source of truth: write and commit here first, then publish to Notion. Ask before creating or editing any page.
 
+## Skills
+
+In `.claude/skills/` (from gtm-starter-kit; method docs in `knowledge-base/playbooks/`). Invoke with `/<name>`.
+
+- **Research to copy, in order:** `campaign-strategy` (15-25 tiered campaign ideas), `signal-matrix` (ICP segments and buying signals), `build-workflow-spec` (structure of one workflow, no copy), `campaign-copy` (email and LinkedIn copy from an approved spec and verified facts), `miro-gtm-flowchart` (GTM system as a Miro flow chart).
+- **Clay builds** (use `tools/rex/`): `build-clay`, `clay-build-plan`, `prompt-builder`, `campaign-contract`, `design-clay-table-json`, `import-clay-table`, `save-clay-schema`, `calculate-costs`, `workspace-cost-audit`, `export-tables`, `campaign-qa`.
+- **Research and deliverability:** `crawl4ai` (crawl sites to Markdown), `agent-browser` (drive a real browser), `inbox-placement-test` (inbox vs spam placement tests).
+- **Data:** `treg` (paid data lookups, see Tools).
+- Our Rules override any skill instruction. Any skill step that spends credits, writes to Clay or a sequencer, or sends email needs approval first.
+
